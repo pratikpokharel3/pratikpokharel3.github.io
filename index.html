@@ -15,69 +15,29 @@
             margin: 0;
             color: #121314;
             font-size: 0.875rem;
-            padding: 3rem 3rem 3rem 6rem;
+            padding: 2rem 3rem 2rem 6rem;
             -webkit-font-smoothing: antialiased;
         }
 
-        ul {
-            height: 90px;
-            overflow: hidden;
-            line-height: 90px;
-        }
-
-        ul li {
-            top: 0;
-            font-size: 4rem;
-            list-style: none;
-            font-weight: 500;
-            position: relative;
-            animation: slide 12s steps(8) infinite;
-        }
-
-        @keyframes slide {
-            100% {
-                top: -720px;
-            }
-        }
-
-        ul li span {
-            position: relative;
-        }
-
-        ul li span::after {
-            left: 0;
-            content: '';
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            border-left: 2px solid;
-            background-color: white;
-            animation: typing 1.5s steps(10) infinite;
-        }
-
-        @keyframes typing {
-            100% {
-                left: 100%;
-                margin: 0 1rem;
-            }
-        }
-
         h1 {
-            font-size: 4.5em;
-            font-weight: 500;
+            font-size: 4rem;
+            font-weight: 400;
+            margin-top: 2rem;
             margin-bottom: 0;
         }
 
         h1+p {
-            font-weight: 700;
-            font-size: 2.2em
+            font-size: 2rem;
+            font-weight: 600;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
         }
 
         p {
-            max-width: 28em;
+            max-width: 32em;
             font-size: 1.6em;
             font-weight: 300;
-            line-height: 1.4;
+            line-height: 1.5;
         }
 
         a {
@@ -102,122 +62,41 @@
             top: 0%;
         }
 
-        @media (max-width: 575px) {
+        @media(max-width: 767px) {
             body {
-                padding: 0;
-            }
-
-            .anim-txt {
-                display: none;
-            }
-
-            .bio {
-                padding: 0rem 1rem 3rem 1rem;
-            }
-        }
-
-        @media (min-width: 576px) {
-            body {
-                padding: 3rem 2rem 3rem 3rem;
-            }
-
-            .anim-txt {
-                display: none;
-            }
-        }
-
-        @media (min-width: 768px) {
-            .content {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-            }
-        }
-
-        @media (min-width: 1200px) {
-            .anim-txt {
-                display: flex;
-            }
-        }
-
-        @media (min-width: 1366px) {
-            .content {
-                margin: 0 auto;
-                max-width: 1366px;
+                padding-left: 3rem;
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="content">
-        <div class="anim-txt">
-            <svg style="width: 60px; height: 60px; margin-bottom: 4rem;" viewBox="0 0 24 24">
-                <path fill="currentColor"
-                    d="M8,3A2,2 0 0,0 6,5V9A2,2 0 0,1 4,11H3V13H4A2,2 0 0,1 6,15V19A2,2 0 0,0 8,21H10V19H8V14A2,2 0 0,0 6,12A2,2 0 0,0 8,10V5H10V3M16,3A2,2 0 0,1 18,5V9A2,2 0 0,0 20,11H21V13H20A2,2 0 0,0 18,15V19A2,2 0 0,1 16,21H14V19H16V14A2,2 0 0,1 18,12A2,2 0 0,1 16,10V5H14V3H16Z" />
-            </svg>
+    <h1>Hello.</h1>
+    <p>My name is Pratik Pokharel.</p>
+    <p>
+        I am a software developer currently studying
+        Bachelor of Information Management (BIM) for my
+        under-graduate degree from Nepal Commerce Campus, Kathmandu, Nepal. Most of my time is divided
+        between
+        programming and studying. If you want to take a look at things that I've built, here are some of
+        them:
+        <a href="https://coingram.netlify.app" target="_blank">Coingram</a>,
+        <a href="https://codepen-test.netlify.app" target="_blank">Codepen Clone</a>.
+    </p>
 
-            <ul>
-                <li>
-                    <span>HTML</span>
-                </li>
-                <li>
-                    <span>CSS</span>
-                </li>
-                <li>
-                    <span>JavaScript</span>
-                </li>
-                <li>
-                    <span>PHP</span>
-                </li>
-                <li>
-                    <span>Vue.js</span>
-                </li>
-                <li>
-                    <span>Laravel</span>
-                </li>
-                <li>
-                    <span>Bootstrap</span>
-                </li>
-                <li>
-                    <span>Vuetify</span>
-                </li>
-            </ul>
-
-            <svg style="width: 60px; height: 60px; margin-top: 6rem;" viewBox="0 0 24 24">
-                <path fill="currentColor"
-                    d="M12.89,3L14.85,3.4L11.11,21L9.15,20.6L12.89,3M19.59,12L16,8.41V5.58L22.42,12L16,18.41V15.58L19.59,12M1.58,12L8,5.58V8.41L4.41,12L8,15.58V18.41L1.58,12Z" />
-            </svg>
-        </div>
-
-        <div class="bio">
-            <h1>Hello.</h1>
-            <p>My name is Pratik Pokharel.</p>
-            <p>
-                I am a software developer currently studying Bachelor of Information Management (BIM) for my
-                under-graduate degree from Nepal Commerce Campus, Kathmandu, Nepal. Most of my time is divided
-                between
-                programming and studying. If you want to take a look at things that I've built, here are some fews of
-                them:
-                <a href="https://coingram.netlify.app" target="_blank">Coingram</a>,
-                <a href="https://codepen-test.netlify.app" target="_blank">Codepen Clone</a>.
-            </p>
-
-            <p>
-                I'll be adding more projects in future. If you like to connect with me, here are my social handles:
-                <a href="https://www.facebook.com/pratik.pokharel47/" target="_blank">Facebook</a>,
-                <a href="https://www.linkedin.com/in/pratikpokharel" target="_blank">LinkedIn</a>,
-                <a href="https://www.instagram.com/pratikpokharel3" target="_blank">Instagram</a>,
-                <a href="https://twitter.com/attikz35" target="_blank">Twitter</a>.
-            </p>
-            <p>
-                Outside of programming and studying, I
-                enjoy watching football - ahem Chelsea, playing video games, travelling and learn to play guitar
-                someday
-                is in my bucket list.
-            </p>
-        </div>
-    </div>
+    <p>
+        I'll be adding more projects in future. If you like to connect with me, here are my social handles:
+        <a href="https://www.facebook.com/pratik.pokharel47/" target="_blank">Facebook</a>,
+        <a href="https://www.linkedin.com/in/pratikpokharel" target="_blank">LinkedIn</a>,
+        <a href="https://www.instagram.com/pratikpokharel3" target="_blank">Instagram</a>,
+        <a href="https://twitter.com/attikz35" target="_blank">Twitter</a>.
+    </p>
+    <p>
+        Outside of programming and studying, I
+        enjoy watching football - ahem Chelsea, playing video games, travelling and learn to play guitar
+        someday
+        is in my bucket list.
+    </p>
 </body>
 
 </html>
