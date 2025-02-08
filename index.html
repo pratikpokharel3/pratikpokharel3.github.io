@@ -1,99 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Pratik Pokharel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://fonts.googleapis.com/css?family=Nunito:300,500,700" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:300,500,700"
+      rel="stylesheet"
+    />
     <style>
+      body {
+        font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        margin: 0;
+        color: #121314;
+        font-size: 0.875rem;
+        padding: 2rem 3rem 2rem 6rem;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      h1 {
+        font-size: 4rem;
+        font-weight: 400;
+        margin-top: 2rem;
+        margin-bottom: 0;
+      }
+
+      h1 + p {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        max-width: 32em;
+        font-size: 1.6em;
+        font-weight: 300;
+        line-height: 1.5;
+      }
+
+      a {
+        color: #121314;
+        position: relative;
+        text-decoration: none;
+      }
+
+      a:after {
+        top: 60%;
+        bottom: 0;
+        content: "";
+        z-index: -1;
+        left: -0.1em;
+        right: -0.1em;
+        position: absolute;
+        background-color: rgb(0 210 115 / 50%);
+        transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+      }
+
+      a:hover:after {
+        top: 0%;
+      }
+
+      @media (max-width: 767px) {
         body {
-            font-family: Nunito, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-                Roboto, Oxygen, Ubuntu, Cantarell,
-                'Open Sans', 'Helvetica Neue', sans-serif;
-            margin: 0;
-            color: #121314;
-            font-size: 0.875rem;
-            padding: 2rem 3rem 2rem 6rem;
-            -webkit-font-smoothing: antialiased;
+          padding-left: 3rem;
         }
-
-        h1 {
-            font-size: 4rem;
-            font-weight: 400;
-            margin-top: 2rem;
-            margin-bottom: 0;
-        }
-
-        h1+p {
-            font-size: 2rem;
-            font-weight: 600;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-        }
-
-        p {
-            max-width: 32em;
-            font-size: 1.6em;
-            font-weight: 300;
-            line-height: 1.5;
-        }
-
-        a {
-            color: #121314;
-            position: relative;
-            text-decoration: none;
-        }
-
-        a:after {
-            top: 60%;
-            bottom: 0;
-            content: '';
-            z-index: -1;
-            left: -0.1em;
-            right: -0.1em;
-            position: absolute;
-            background-color: rgb(0 210 115 / 50%);
-            transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
-        }
-
-        a:hover:after {
-            top: 0%;
-        }
-
-        @media(max-width: 767px) {
-            body {
-                padding-left: 3rem;
-            }
-        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>Hello.</h1>
     <p>My name is Pratik Pokharel.</p>
     <p>
-        I am a software developer currently studying
-        Bachelor of Information Management (BIM) for my
-        under-graduate degree from Nepal Commerce Campus, Kathmandu, Nepal. Most of my time is divided
-        between
-        programming and studying. If you want to take a look at things that I've built, here are some of
-        them:
-        <a href="https://crashcoursejs.netlify.app" target="_blank">JS Tutorial</a>,
-        <a href="https://codiify.netlify.app" target="_blank">Codiify</a>,
-        <a href="https://woordle.netlify.app" target="_blank">Woordle</a>.
+      I am a software developer currently studying Bachelor of Information
+      Management (BIM) for my under-graduate degree from Nepal Commerce Campus,
+      Kathmandu, Nepal. Most of my time is divided between programming and
+      studying. If you want to take a look at things that I've built, here are
+      some of them:
+      <a href="https://crashcoursejs.netlify.app" target="_blank">JS Tutorial</a
+      >, <a href="https://penwrite.netlify.app" target="_blank">Penwrite</a>,
+      <a href="https://woordle.netlify.app" target="_blank">Woordle</a>.
     </p>
     <p>
-        I'll be adding more projects in future. If you like to connect with me, here are my social handles:
-        <a href="https://www.linkedin.com/in/pratikpokharel" target="_blank">LinkedIn</a>,
-        <a href="https://www.instagram.com/pratikpokharel3" target="_blank">Instagram</a>,
-        <a href="https://twitter.com/attikz35" target="_blank">Twitter</a>.
+      I'll be adding more projects in future. If you like to connect with me,
+      here are my social handles:
+      <a href="https://www.linkedin.com/in/pratikpokharel" target="_blank"
+        >LinkedIn</a
+      >,
+      <a href="https://www.instagram.com/pratikpokharel3" target="_blank"
+        >Instagram</a
+      >, <a href="https://twitter.com/attikz35" target="_blank">Twitter</a>.
     </p>
     <p>
-        Outside of programming and studying, I
-        enjoy watching football - ahem Chelsea, playing video games, travelling and learn to play guitar
-        someday
-        is in my bucket list.
+      Outside of programming and studying, I enjoy watching football - ahem
+      Chelsea, playing video games, travelling and learn to play guitar someday
+      is in my bucket list.
     </p>
-</body>
+
+    <script src="./test.js"></script>
+  </body>
 </html>
